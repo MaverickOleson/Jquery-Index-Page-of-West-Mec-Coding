@@ -1,0 +1,29 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    border: 8px solid black;
+    div{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    h1{
+        margin-left: 30px;
+    }
+    h1, a{
+        padding: {
+            right: 60px;
+            left: 60px;
+        }
+    }
+    #links{
+        margin-left: auto;
+        justify-content: space-evenly;
+        a{
+            text-decoration: underline;
+        }
+    }
+}

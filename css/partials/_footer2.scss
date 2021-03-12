@@ -1,0 +1,30 @@
+$margin-tb: 15px;
+footer{
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    border-top: 5px solid black;
+    div{
+        flex-direction: column;
+        padding-left: 30px;
+        box-sizing: border-box;
+        border: {
+            left: 7px solid black
+        }
+    }
+    #first-div{
+        border: none;
+    }
+    .section{
+        height: 100%;
+        margin: {
+            top: auto;
+            bottom: auto;
+        }
+    }
+}
