@@ -1,14 +1,11 @@
-$margin-tb: 15px;
 footer{
     display: flex;
-    width: 100vw;
-    height: fit-content;
+    max-width: 100vw;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    position: absolute;
-    bottom: 0;
-    border-top: 5px solid black;
+    border: 5px solid limegreen;
+    border-bottom: none;
+    box-sizing: border-box;
     div{
         flex-direction: column;
         padding-left: 30px;
@@ -19,12 +16,5 @@ footer{
     }
     #first-div{
         border: none;
-    }
-    .section{
-        height: 100%;
-        margin: {
-            top: auto;
-            bottom: auto;
-        }
     }
 }
