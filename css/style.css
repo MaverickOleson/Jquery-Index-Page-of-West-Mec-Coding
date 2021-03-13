@@ -2,8 +2,20 @@
   margin: 0;
 }
 
+img {
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+}
+
 body {
   background-color: black;
+  /*@keyframes spin{
+        from {transform: rotateY(0deg)}
+        to {transform: rotateY(360deg)}
+    }*/
   /*@import 'partials/footer1';
     footer{
         background-color: blue;
@@ -98,12 +110,102 @@ body nav #links a {
   }
 }
 
-body nav {
+body nav img {
+  width: 19%;
+}
+
+body nav a {
   background-color: white;
 }
 
-body nav img {
-  height: auto;
+body #logoDIV {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 31%;
+}
+
+body #logoBack {
+  z-index: -1;
+  position: relative;
+}
+
+body #logoFront {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  height: 100%;
+}
+
+@-webkit-keyframes spin1 {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    z-index: -1;
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    z-index: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    z-index: -1;
+  }
+}
+
+@keyframes spin1 {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    z-index: -1;
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    z-index: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    z-index: -1;
+  }
+}
+
+@-webkit-keyframes spin2 {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    z-index: 0;
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    z-index: -1;
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    z-index: 0;
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    z-index: 0;
+  }
+  50% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    z-index: -1;
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    z-index: 0;
+  }
 }
 
 body #viewportContent {
